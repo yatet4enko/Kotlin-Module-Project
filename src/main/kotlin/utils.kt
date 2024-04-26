@@ -6,7 +6,7 @@ fun scanNotEmptyText(title: String, emptyMessage: String): String {
     while (text.isEmpty()) {
         println(title)
 
-        text = Scanner(System.`in`).next()
+        text = Scanner(System.`in`).nextLine().trim()
 
         if (text.isEmpty()) {
             println(emptyMessage)
